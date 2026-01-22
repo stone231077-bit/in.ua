@@ -1,4 +1,67 @@
 // ============================================
+// i18n - СИСТЕМА ПЕРЕВОДОВ
+// ============================================
+const translations = {
+    ru: {},
+    uk: {},
+    en: {}
+};
+
+// RU переводы
+translations.ru["team.title"] = "Наша команда";
+translations.ru["team.subtitle"] = "2 человека, быстрый контакт, помощь с подбором";
+translations.ru["team.vlad.name"] = "Влад Світлячок";
+translations.ru["team.vlad.role"] = "Продажи и консультации";
+translations.ru["team.igor.name"] = "Ігор Михайлович";
+translations.ru["team.igor.role"] = "Подбор и комплектация";
+
+// UA переводы
+translations.uk["team.title"] = "Наша команда";
+translations.uk["team.subtitle"] = "2 людини, швидкий контакт, допомога з підбором";
+translations.uk["team.vlad.name"] = "Влад Світлячок";
+translations.uk["team.vlad.role"] = "Продажі та консультації";
+translations.uk["team.igor.name"] = "Ігор Михайлович";
+translations.uk["team.igor.role"] = "Підбір і комплектація";
+
+// EN переводы
+translations.en["team.title"] = "Our team";
+translations.en["team.subtitle"] = "2 people, fast contact, help with selection";
+translations.en["team.vlad.name"] = "Vlad Svitliachok";
+translations.en["team.vlad.role"] = "Sales & consulting";
+translations.en["team.igor.name"] = "Ihor Mykhailovych";
+translations.en["team.igor.role"] = "Selection & order prep";
+
+// Определение текущего языка (по умолчанию UA)
+let currentLang = localStorage.getItem('lang') || 'uk';
+
+// Функция перевода
+function translatePage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Обновляем атрибут lang у html
+    if (document.documentElement) {
+        document.documentElement.lang = lang;
+    }
+    const htmlLang = document.getElementById('htmlLang');
+    if (htmlLang) {
+        htmlLang.lang = lang;
+    }
+}
+
+// Инициализация перевода при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    translatePage(currentLang);
+});
+
+// ============================================
 // НАСТРОЙКА ОТПРАВКИ ФОРМЫ
 // ============================================
 // Вариант 1: Formspree (рекомендуется)

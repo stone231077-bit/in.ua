@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" id="htmlLang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,55 +30,39 @@
             </div>
         </section>
 
-        <section id="team" class="team-section">
+        <section class="team" id="team">
             <div class="container">
-                <h2>Наша команда</h2>
+                <h2 class="section-title" data-i18n="team.title">Наша команда</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">2 человека, быстрый контакт, помощь с подбором</p>
+
                 <div class="team-grid">
-                    <div class="team-member">
-                        <div class="photo-placeholder">
-                            <span>Фото</span>
-                        </div>
-                        <div class="member-info">
-                            <h3>Василь Падалиця</h3>
-                            <div class="contacts">
-                                <p><strong>Телефон:</strong></p>
-                                <p>+38 067 964 87 99 (Viber)</p>
-                                <p>+38 066 620 20 86 (Telegram)</p>
-                                <p><strong>Email:</strong> <a href="mailto:vasil.ra99@gmail.com">vasil.ra99@gmail.com</a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Влад -->
+                    <article class="team-card">
+                        <div class="avatar">ВС</div>
+                        <h3 class="team-name" data-i18n="team.vlad.name">Влад Світлячок</h3>
+                        <p class="team-role" data-i18n="team.vlad.role">Продажи и консультации</p>
 
-                    <div class="team-member">
-                        <div class="photo-placeholder">
-                            <span>Фото</span>
+                        <div class="team-links">
+                            <a class="team-link" href="tel:+380983234657">+380 98 323 46 57</a>
+                            <a class="team-link" href="https://t.me/+380983234657" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                            </a>
                         </div>
-                        <div class="member-info">
-                            <h3>Зубко Сергій Іванович</h3>
-                            <div class="contacts">
-                                <p><strong>Онлайн каталог:</strong></p>
-                                <p><a href="https://LED-SVET-DNEPR.uaprom.net" target="_blank">LED-SVET-DNEPR.uaprom.net</a></p>
-                                <p><strong>Телефон:</strong></p>
-                                <p>+38 096 371 78 67 (Viber+WhatsApp+Telegram)</p>
-                                <p>+38 099 788 94 71</p>
-                                <p><strong>Email:</strong> <a href="mailto:Led.svet.dnepr@gmail.com">Led.svet.dnepr@gmail.com</a></p>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="team-member">
-                        <div class="photo-placeholder">
-                            <span>Фото</span>
+                    <!-- Ігор -->
+                    <article class="team-card">
+                        <div class="avatar">ІМ</div>
+                        <h3 class="team-name" data-i18n="team.igor.name">Ігор Михайлович</h3>
+                        <p class="team-role" data-i18n="team.igor.role">Подбор и комплектация</p>
+
+                        <div class="team-links">
+                            <a class="team-link" href="tel:+380676333323">+380 67 633 33 23</a>
+                            <a class="team-link" href="https://t.me/+380676333323" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                            </a>
                         </div>
-                        <div class="member-info">
-                            <h3>Андрій</h3>
-                            <div class="contacts">
-                                <p><strong>Телефон:</strong></p>
-                                <p>+380 (95) 843 37 72 (Viber / Telegram)</p>
-                                <p>+380 (97) 589 55 08</p>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
