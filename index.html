@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ra99.in.io - Електротовари</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">ra99.in.io</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#brands">Бренди</a></li>
+                    <li><a href="#location">Розташування</a></li>
+                    <li><a href="#contact">Зв'язок</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Продаємо електротовари із турботою про ваш комфорт!</h2>
+                <p class="tagline">Електрика доступна кожному!</p>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2>Наша команда</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="photo-placeholder">
+                            <span>Фото</span>
+                        </div>
+                        <div class="member-info">
+                            <h3>Василь Падалиця</h3>
+                            <div class="contacts">
+                                <p><strong>Телефон:</strong></p>
+                                <p>+38 067 964 87 99 (Viber)</p>
+                                <p>+38 066 620 20 86 (Telegram)</p>
+                                <p><strong>Email:</strong> <a href="mailto:vasil.ra99@gmail.com">vasil.ra99@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="photo-placeholder">
+                            <span>Фото</span>
+                        </div>
+                        <div class="member-info">
+                            <h3>Зубко Сергій Іванович</h3>
+                            <div class="contacts">
+                                <p><strong>Онлайн каталог:</strong></p>
+                                <p><a href="https://LED-SVET-DNEPR.uaprom.net" target="_blank">LED-SVET-DNEPR.uaprom.net</a></p>
+                                <p><strong>Телефон:</strong></p>
+                                <p>+38 096 371 78 67 (Viber+WhatsApp+Telegram)</p>
+                                <p>+38 099 788 94 71</p>
+                                <p><strong>Email:</strong> <a href="mailto:Led.svet.dnepr@gmail.com">Led.svet.dnepr@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="photo-placeholder">
+                            <span>Фото</span>
+                        </div>
+                        <div class="member-info">
+                            <h3>Андрій</h3>
+                            <div class="contacts">
+                                <p><strong>Телефон:</strong></p>
+                                <p>+380 (95) 843 37 72 (Viber / Telegram)</p>
+                                <p>+380 (97) 589 55 08</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="brands-section">
+            <div class="container">
+                <h2>Наші бренди</h2>
+                <div class="brands-grid">
+                    <div class="brand-card">Schneider</div>
+                    <div class="brand-card">ABB</div>
+                    <div class="brand-card">Konlux</div>
+                    <div class="brand-card">Horos</div>
+                    <div class="brand-card">Firon</div>
+                    <div class="brand-card">Novodvorski</div>
+                </div>
+                <div class="products-info">
+                    <h3>Асортимент товарів:</h3>
+                    <ul>
+                        <li>Розетки</li>
+                        <li>Вимикачі</li>
+                        <li>Світильники</li>
+                        <li>Проводи</li>
+                        <li>Автоматика</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <h2>Розташування магазину</h2>
+                <div class="address-card">
+                    <p class="address">Україна, м. Дніпро, пр. Гагаріна, 153</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Зв'яжіться з нами</h2>
+                <p class="form-description">Залиште заявку, пропозицію або запит. Ми обов'язково з вами зв'яжемося!</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Тип запиту *</label>
+                        <select id="type" name="type" required>
+                            <option value="">Оберіть тип запиту</option>
+                            <option value="order">Замовлення</option>
+                            <option value="proposal">Пропозиція</option>
+                            <option value="review">Відгук</option>
+                            <option value="complaint">Скарга</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Відправити</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ra99.in.io. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
