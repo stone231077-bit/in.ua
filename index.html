@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk" id="htmlLang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ra99.in.ua - Електротовари</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">ra99.in.ua</h1>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="uk" title="Українська">UA</button>
+                <button class="lang-btn" data-lang="ru" title="Русский">RU</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Головна</a></li>
+                    <li><a href="#team" data-i18n="nav.team">Команда</a></li>
+                    <li><a href="#brands" data-i18n="nav.brands">Бренди</a></li>
+                    <li><a href="#location" data-i18n="nav.location">Розташування</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Зв'язок</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 data-i18n="hero.title">Продаємо електротовари із турботою про ваш комфорт!</h2>
+                <p class="tagline" data-i18n="hero.tagline">Електрика доступна кожному!</p>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h2 class="section-title" data-i18n="team.title">Наша команда</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">2 человека, быстрый контакт, помощь с подбором</p>
+
+                <div class="team-grid">
+                    <!-- Влад -->
+                    <article class="team-card">
+                        <div class="avatar">ВС</div>
+                        <h3 class="team-name" data-i18n="team.vlad.name">Влад Світлячок</h3>
+                        <p class="team-role" data-i18n="team.vlad.role">Продажи и консультации</p>
+
+                        <div class="team-links">
+                            <a class="team-link" href="tel:+380983234657">+380 98 323 46 57</a>
+                            <a class="team-link" href="https://t.me/+380983234657" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Ігор -->
+                    <article class="team-card">
+                        <div class="avatar">ІМ</div>
+                        <h3 class="team-name" data-i18n="team.igor.name">Ігор Михайлович</h3>
+                        <p class="team-role" data-i18n="team.igor.role">Подбор и комплектация</p>
+
+                        <div class="team-links">
+                            <a class="team-link" href="tel:+380676333323">+380 67 633 33 23</a>
+                            <a class="team-link" href="https://t.me/+380676333323" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="brands-section">
+            <div class="container">
+                <h2 data-i18n="brands.title">Наші бренди</h2>
+                <div class="brands-grid">
+                    <div class="brand-card">
+                        <div class="brand-icon">⚡</div>
+                        <div class="brand-name">Schneider Electric</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-icon">🔌</div>
+                        <div class="brand-name">ABB</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-icon">💡</div>
+                        <div class="brand-name">Konlux</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-icon">✨</div>
+                        <div class="brand-name">Horos</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-icon">🔦</div>
+                        <div class="brand-name">Firon</div>
+                    </div>
+                    <div class="brand-card">
+                        <div class="brand-icon">🌟</div>
+                        <div class="brand-name">Novodvorski</div>
+                    </div>
+                </div>
+                <div class="products-section">
+                    <h3 data-i18n="products.title">Асортимент товарів</h3>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <div class="product-icon">🔌</div>
+                            <h4 data-i18n="products.sockets">Розетки</h4>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-icon">🔘</div>
+                            <h4 data-i18n="products.switches">Вимикачі</h4>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-icon">💡</div>
+                            <h4 data-i18n="products.lights">Світильники</h4>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-icon">🔗</div>
+                            <h4 data-i18n="products.wires">Проводи</h4>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-icon">⚙️</div>
+                            <h4 data-i18n="products.automation">Автоматика</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <h2 data-i18n="location.title">Розташування магазину</h2>
+                <div class="address-card">
+                    <p class="address" data-i18n="location.address">Україна, м. Дніпро, проспект Науки (Гагаріна), 153</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 data-i18n="contact.title">Зв'яжіться з нами</h2>
+                <p class="form-description" data-i18n="contact.description">Залиште заявку, пропозицію або запит. Ми обов'язково з вами зв'яжемося!</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form.name">Ваше ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form.phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form.email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type" data-i18n="form.type">Тип запиту *</label>
+                        <select id="type" name="type" required>
+                            <option value="" data-i18n="form.typeSelect">Оберіть тип запиту</option>
+                            <option value="order" data-i18n="form.order">Замовлення</option>
+                            <option value="proposal" data-i18n="form.proposal">Пропозиція</option>
+                            <option value="review" data-i18n="form.review">Відгук</option>
+                            <option value="complaint" data-i18n="form.complaint">Скарга</option>
+                            <option value="other" data-i18n="form.other">Інше</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form.message">Повідомлення *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-i18n="form.submit">Відправити</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ra99.in.ua. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
